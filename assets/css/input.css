@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@source "../../*.html";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+  --color-psu-navy: #001e44;
+  --color-psu-blue: #1e407c;
+  --color-psu-pugh: #96bee6;
+  --color-psu-white: #ffffff;
+  --color-psu-mist: #f4f8fb;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  a:not([class]) {
+    @apply text-psu-blue underline decoration-psu-pugh/60 underline-offset-2 transition-colors hover:text-psu-navy hover:decoration-psu-blue;
+  }
+}

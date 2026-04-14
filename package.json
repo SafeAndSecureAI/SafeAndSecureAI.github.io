@@ -1,0 +1,11 @@
+{
+  "name": "psuaisec-github-io",
+  "private": true,
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/site.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
